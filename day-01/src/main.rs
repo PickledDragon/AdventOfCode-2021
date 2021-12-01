@@ -12,7 +12,7 @@ fn main() {
     count = nums
         .iter()
         .tuple_windows()
-        .map(|(a, b)| (a > b) as usize)
+        .map(|(a, b)| (b > a) as usize)
         .sum();
 
     println!("Part 1: Number of increases:{}", count);
